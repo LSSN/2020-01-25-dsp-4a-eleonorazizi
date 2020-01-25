@@ -2,3 +2,6 @@
 //la sintesi sottrattiva è un processo in cui si ottiene un suono semplice fino ad arrivare a uno complesso utilizzando dei filtri, come il filtro passa banda.
 import("stdfaust.lib");
 process = no.noise : fi.lowpass(6,6000);
+//la sintesi sottrattiva è un processo in cui si ottiene un suono semplice fino ad arrivare a uno complesso utilizzando dei filtri, come il filtro passa banda.
+import("stdfaust.lib");
+process = no.noise : fi.lowpass(6,6000); fi.highpass  (6,0000);
